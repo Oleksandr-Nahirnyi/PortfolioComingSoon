@@ -5,30 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ALex Nahirnyi</title>
-    <!--TODOS 1
+
+    
+    <!--
+        /*TODO 1
         Info:
-        You probably noticed that there are so many different fonts on the websites, let's make our logo look differently from 
-        the rest of the website texts. 
+        Now let's properly position the elements on our page, starting with logo.
+        Sometimes you want to style an element inside another, like in our case you want to style <h1>
+        that is inside the logo container (div), because if later you add more h1's to you page you dont want them to have
+        the same style as logo, coz it'll break the page.
         Task:
-        1. In google search for "google fonts"
-        2. Pick the one that you like, the one that you think would make your name/logo look like a logo, for example Major Mono Display font
-        3. Scroll down the font pade to the style section and where it says "Regular 400" click the plus icon
-        4. On the right you see "Use on the web", just copy those link tags and paste the under the comments "Fonts go here"
-        5. Wrap h1 tag with you name in the div tags
-        6. Add class with name logo
-        7. In style section give your logo class a property called font-family and set it to the name of your font
-            - You can find an example on the 'Use on the web' popup from step 4
-        8. Open your index.html in browser and make sure the font is applied to the logo
+        1. To access the h1 inside the logo div, just write the wrapping element first followed the element insideof it, like so:
+        .element element {
+        }
+        2. Then let's move it further from the page sides. For that add property called padding and set it to 25px (25 pixels)
+        */
+        /*TODO 2
+        Info:
+        Now let's position or main-text element in the middle of the page not only by width, but by height as well.
+        For that better not to use pixels, because the height of the device that user will view your website can be different.
+        We have "vh" for it, vh is window height, no matter what device you open you website on 100vh is the height.
+        Task:
+        1. Remove the Really soon paragraph, we don't need it anymore
+        2. In styles part of the code find where you already addressed main-text element
+        3. Add the second property called "margin-top", "margin" like "padding" it's another way to offset the elements
+        - Please read this short article to understand the difference https://blog.hubspot.com/website/css-margin-vs-padding
+        4. Let's set it to 35vh, which will place the main-text element approximatly in the middle (it's not the best way to position
+        in the middle, but for now it'll do, later we will lear the better way)
+        */
+        /*TODO 3
+        Info:
+        Nobody actually write CSS code inside the HTML in real life, because the bigger website the more code there is, at some
+        point it just becomes impossible to scroll and read it. Let's separte our styles and html mark-up.
+        Task:
+        1. In this folder create a file and name it styles.css
+        2. Copy all the CSS code from between the style tags to that file
+        3. Delete the style tag with all the CSS inside from index.html
+        4. At the top in the <head> tag above the fonts add "link" tag that will show this index.html file where the styles.css file is
+            <link rel="stylesheet" href="styles.css">
+        */
     -->
 
-    <!--TODO 2
-        Let's now do the same thing for the rest of the text on our website
-        
-        Task:
-        1. Let's search for Montserrat font on google font and add it below the other font
-        2. Now that we wnat this font to be the default font for our website, let's take tag body and in styles give it the font-family
-        property with Montserrat font
-    -->
     <!--Fonts go here-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,6 +69,7 @@
       p {
         text-align: center;
       }
+
       .main-text {
         font-size: 25px;
       }  
