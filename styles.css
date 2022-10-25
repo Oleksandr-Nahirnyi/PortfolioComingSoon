@@ -10,6 +10,9 @@ You don't need to do anything wth this code just put it outside of the comment
 
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  
   /*Todo 5 
     Let's remove offsets from the body tag
     Set margin and padding property to 0
@@ -27,7 +30,13 @@ body {
  8. Set background-blend-mode to 'overlay', this will make the picture dimmer
 */
 .header {
-
+  background-image: url(images/pexels-picjumbocom-196659\ \(1\).jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-blend-mode: overlay;
 }
 
 .logo {
@@ -35,7 +44,9 @@ body {
 }
 
 .logo h1 {
+  margin: 0;
   padding: 25px;
+  color: #fff;
   /*Todo 4 
   Let's remove margins from the h1 tag
   Set margin property to 0*/
@@ -49,13 +60,12 @@ body {
 Lets fix that thing real quick, we don't want every p tag on our page to have centered text, it'll break the page eventually
 For that specify that that p tag is in the tag with class 'hero-text', write .hero-text before p
 */  
-p {
-  text-align: center;
-}
 
-.hero-text {
+.hero-text p {
   /*Todo 7 
     Set text color to white (#fff)*/
+  text-align: center;
   font-size: 25px;
   margin-top: 35vh;
+  color: #fff;
 }  
