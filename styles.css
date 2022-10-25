@@ -1,34 +1,10 @@
-/*todos 0 
-By default elements in html have some styling, but we don't want it to break the styling that we make, so lets remove it
-This is the code we need, star means 'all elemnets', after and befre we will lear later.
-
-You don't need to do anything wth this code just put it outside of the comment
-*, *::after, *::before {
-    box-sizing: border-box;
-}
-*/
-
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
-  
-  /*Todo 5 
-    Let's remove offsets from the body tag
-    Set margin and padding property to 0
-  */
+ 
 }
 
-/*Todo 6 Lets add the background to our header part of the website
- 1. Got to pexels.com and download pisture that you think would look good on the background of you website, select the medium size and move it to the img folder in your project
- 2. Set background-image to url(img/your-image.jpg)
- 3. Set heaight to 100vh so this section will alwasy be the window height
- 4. Set background-size to 'cover', this will stretch the image to the viewport
- 5. Set background-repeat to 'no-repeat', this will not let the browser to repeat the picture
- 6. Set background-attachment to 'fixed', this will fix it at the same spot
- 7. Set background-position to 'center', this will center the image to be in the middle
- 8. Set background-blend-mode to 'overlay', this will make the picture dimmer
-*/
 .header {
   background-image: url(images/pexels-picjumbocom-196659\ \(1\).jpg);
   height: 100vh;
@@ -47,23 +23,9 @@ body {
   margin: 0;
   padding: 25px;
   color: #fff;
-  /*Todo 4 
-  Let's remove margins from the h1 tag
-  Set margin property to 0*/
-
-  /*Todo 8 
-  Set text color to white (#fff)*/
-
 }
 
-/*Todo 1 
-Lets fix that thing real quick, we don't want every p tag on our page to have centered text, it'll break the page eventually
-For that specify that that p tag is in the tag with class 'hero-text', write .hero-text before p
-*/  
-
 .hero-text p {
-  /*Todo 7 
-    Set text color to white (#fff)*/
   text-align: center;
   font-size: 25px;
   margin-top: 35vh;
