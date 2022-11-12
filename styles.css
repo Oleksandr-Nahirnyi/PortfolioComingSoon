@@ -31,3 +31,22 @@ body {
   margin-top: 35vh;
   color: #fff;
 }  
+
+.container {
+
+}
+
+.row {
+  /* width: 1000px; */
+  height: 100px;
+  background-color: #ff0;
+}
+
+.box {
+  height: 30px;
+  background-color: red;
+}
+
+.h1 {
+  text-align: center;
+}
